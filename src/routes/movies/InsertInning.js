@@ -32,9 +32,7 @@ const InsertInning = props => {
     if(direction === 'right') {
       let { innings = [] } = movie
       
-      if (isEmpty(innings)) {
-        innings = innings.concat(nextTargetKeys)
-      }
+      innings = innings.concat(nextTargetKeys)
 
       dispatch(
         editMovieById({ ...movie, innings })
