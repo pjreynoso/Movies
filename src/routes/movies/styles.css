@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.container__title {
+  font-size: 30px;
+}
+
+.space__icon {
+  cursor: pointer;
+}
