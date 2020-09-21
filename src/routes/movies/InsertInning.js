@@ -30,12 +30,10 @@ const InsertInning = props => {
     setTargetKeys(nextTargetKeys);
 
     if(direction === 'right') {
-      let { innings = [] } = movie
+      const { innings = [] } = movie
       
-      innings = innings.concat(nextTargetKeys)
-
       dispatch(
-        editMovieById({ ...movie, innings })
+        editMovieById({ ...movie, innings: innings.concat(nextTargetKeys)})
       )
     } else if (direction === 'left') {
       let { innings = [] } = movie
